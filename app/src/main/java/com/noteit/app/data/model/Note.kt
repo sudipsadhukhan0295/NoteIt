@@ -8,7 +8,7 @@ import androidx.room.PrimaryKey
 data class Note(
         @PrimaryKey
         @ColumnInfo(name = "id")
-        var noteId: Int,
+        var noteId: Int?,
         var title: String = "",
         var description: String = ""
 )
